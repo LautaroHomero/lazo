@@ -1,0 +1,46 @@
+{
+  "node": {
+    "0ea69251fd8724e81d5b477c7da9fa3b6ca1aebb": {
+      "workers": {
+        "app/obligations/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flautarohomeroaguerreche%2FDocuments%2Flazo%2Flazo%2Ffrontend%2Fapp%2Factions%2Fobligations.ts%22%2C%5B%22attachDocumentAction%22%2C%22changeStatusAction%22%2C%22createObligationAction%22%2C%22updateObligationAction%22%2C%22deleteObligationAction%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/obligations/[id]/page": "rsc"
+      }
+    },
+    "25bff3d3ae81be778bf6e6fc078f4f398a862a46": {
+      "workers": {
+        "app/obligations/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flautarohomeroaguerreche%2FDocuments%2Flazo%2Flazo%2Ffrontend%2Fapp%2Factions%2Fobligations.ts%22%2C%5B%22attachDocumentAction%22%2C%22changeStatusAction%22%2C%22createObligationAction%22%2C%22updateObligationAction%22%2C%22deleteObligationAction%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/obligations/[id]/page": "rsc"
+      }
+    },
+    "3593e0bc4486c464f4e95109a5980d8cc22d5b73": {
+      "workers": {
+        "app/obligations/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flautarohomeroaguerreche%2FDocuments%2Flazo%2Flazo%2Ffrontend%2Fapp%2Factions%2Fobligations.ts%22%2C%5B%22attachDocumentAction%22%2C%22changeStatusAction%22%2C%22createObligationAction%22%2C%22updateObligationAction%22%2C%22deleteObligationAction%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/obligations/[id]/page": "rsc"
+      }
+    },
+    "6c2a9344f214a90d92181daa1a5ebd08efc03b98": {
+      "workers": {
+        "app/obligations/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flautarohomeroaguerreche%2FDocuments%2Flazo%2Flazo%2Ffrontend%2Fapp%2Factions%2Fobligations.ts%22%2C%5B%22attachDocumentAction%22%2C%22changeStatusAction%22%2C%22createObligationAction%22%2C%22updateObligationAction%22%2C%22deleteObligationAction%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/obligations/[id]/page": "rsc"
+      }
+    },
+    "7dcd3b4f91a91aaae4d615efaa943c7689ca673e": {
+      "workers": {
+        "app/obligations/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Flautarohomeroaguerreche%2FDocuments%2Flazo%2Flazo%2Ffrontend%2Fapp%2Factions%2Fobligations.ts%22%2C%5B%22attachDocumentAction%22%2C%22changeStatusAction%22%2C%22createObligationAction%22%2C%22updateObligationAction%22%2C%22deleteObligationAction%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/obligations/[id]/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "Y4KjVzoHcKBYPTSv1yTreI7s/3/0ku/YnTmHDa7WTr0="
+}
