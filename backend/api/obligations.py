@@ -4,14 +4,13 @@ from datetime import date
 from pathlib import Path
 from uuid import UUID, uuid4
 
-from fastapi import APIRouter, File, UploadFile, status
-
 from application.attach_document import AttachDocument
 from application.change_status import ChangeStatus
 from application.create_obligation import CreateObligation
 from application.delete_obligation import DeleteObligation
 from application.get_dashboard import GetDashboard
 from application.update_obligation import UpdateObligation
+from db.config import settings
 from domain.enums import ObligationStatus
 from domain.errors import (
     ConcurrencyConflictError,
@@ -20,6 +19,7 @@ from domain.errors import (
     EntityNotFoundError,
     InvalidTransitionError,
 )
+from fastapi import APIRouter, File, UploadFile, status
 from infraestructure.repositories.repositories.postgres_obligation_repository import (
     PostgresObligationRepository,
 )
@@ -147,7 +147,9 @@ def change_obligation_status(
     return _to_response(obligation)
 
 
-@router.post("/obligations/{obligation_id}/documents", response_model=ObligationResponse)
+@router.post(
+    "/obligations/{obligation_id}/documents", response_model=ObligationResponse
+)
 def attach_document(
     obligation_id: str,
     file: UploadFile = File(...),
@@ -160,7 +162,7 @@ def attach_document(
     with stored_path.open("wb") as buffer:
         buffer.write(file.file.read())
 
-    file_url = f"/uploads/{safe_name}"
+    file_url = f"{settings.public_base_url.rstrip('/')}/uploads/{safe_name}"
     content = file.file.read()
     obligation = attach_document_use_case.execute(
         UUID(obligation_id),
@@ -182,6 +184,8 @@ def delete_obligation(obligation_id: str) -> None:
 def get_dashboard() -> dict[str, list[dict]]:
     dashboard = get_dashboard_use_case.execute()
     return {
-        status.value: [_to_response(obligation).model_dump() for obligation in obligations]
+        status.value: [
+            _to_response(obligation).model_dump() for obligation in obligations
+        ]
         for status, obligations in dashboard.items()
     }
